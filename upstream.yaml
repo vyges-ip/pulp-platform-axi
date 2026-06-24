@@ -1,0 +1,21 @@
+schema_version: "vyges-upstream-v1"
+upstream:
+  type: "standalone"
+  repo: https://github.com/pulp-platform/axi
+  branch: master
+  commit: e55ae2a7ee606ee3cfd4257f63982a971b704407
+  extracted_at: "2026-06-24T05:08:49Z"
+import:
+  rtl:
+    - path: "src"
+      map_to: "rtl"
+    - path: "include"
+      map_to: "include"
+  license:
+    - path: "LICENSE"
+  readme:
+    - path: "README.md"
+license:
+  spdx: SHL-0.51
+  file: LICENSE
+metadata_locked: true
