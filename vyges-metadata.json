@@ -3,9 +3,9 @@
   "x-version": "1.0.0",
   "name": "pulp-platform-axi",
   "version": "0.1.0",
-  "description": "TODO: one-paragraph description of pulp-platform-axi. Mirror of https://github.com/pulp-platform/axi.",
+  "description": "SystemVerilog AXI4 library from PULP: axi_xbar (full crossbar), axi_dw_converter (data-width up/downsizers), axi_iw_converter/axi_id_remap (ID width), axi_mux/axi_demux, and AXI4-Lite variants. Modules in rtl/, the AXI_TYPEDEF/ASSIGN macros in include/axi/. Silicon-proven in PULP/OpenHW tape-outs.",
   "license": "SHL-0.51",
-  "maturity": "draft",
+  "maturity": "stable",
   "target": [
     "asic",
     "fpga"
@@ -66,12 +66,18 @@
   ],
   "categories": [
     {
-      "main_category": "Miscellaneous",
-      "sub_category": "TODO"
+      "main_category": "Interface Controllers",
+      "sub_category": "AXI4 fabric library"
     }
   ],
   "keywords": [
-    "TODO"
+    "axi4",
+    "axi",
+    "crossbar",
+    "interconnect",
+    "dw-converter",
+    "iw-converter",
+    "pulp"
   ],
   "branding": {
     "provider": "pulp-platform",
@@ -84,7 +90,7 @@
   "trust": {
     "verification_level": "unverified",
     "tapeout_count": 0,
-    "fpga_validated": false,
+    "fpga_validated": true,
     "maintained": true,
     "last_activity": "2026-06-24T05:08:49Z"
   },
@@ -97,5 +103,6 @@
     "schema": {
       "version": "1.0.0"
     }
-  }
+  },
+  "_note": "Upstream pulp-platform/axi mirror. Used by Vyges for the data-plane interconnect (see vyges-axi-dram-xbar). Library of building blocks (no single top-level interface); macros live in include/axi/{typedef,assign,port}.svh, modules in rtl/. Depends on pulp-platform-common_cells."
 }
