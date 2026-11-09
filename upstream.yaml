@@ -3,7 +3,7 @@ upstream:
   type: "standalone"
   repo: https://github.com/pulp-platform/axi
   branch: master
-  commit: 70b8e54fd460e3308e58be596ceb3566a6e3576e
+  commit: d436bd4936ba1c49cd87521df54580c5159114d3
   extracted_at: "2026-06-24T05:08:49Z"
 import:
   rtl:
